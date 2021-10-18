@@ -1,0 +1,8 @@
+// 测试内容：函数的定义和调用
+
+int b = 10;
+int myfunc(int a)
+{
+    return a+b+3;
+}
+println(myfunc(2));

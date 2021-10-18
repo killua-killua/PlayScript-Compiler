@@ -1,0 +1,653 @@
+graph at {
+node [shape=plaintext]
+0 [label="prog"]
+1 [label="blockStatements"]
+0 -- 1
+2 [label="blockStatement"]
+1 -- 2
+3 [label="variableDeclarators"]
+2 -- 3
+4 [label="typeType"]
+3 -- 4
+5 [label="primitiveType"]
+4 -- 5
+6 [label="int" shape=rectangle]
+5 -- 6
+7 [label="variableDeclarator"]
+3 -- 7
+8 [label="variableDeclaratorId"]
+7 -- 8
+9 [label="a" shape=rectangle]
+8 -- 9
+10 [label="=" shape=rectangle]
+7 -- 10
+11 [label="variableInitializer"]
+7 -- 11
+12 [label="expression"]
+11 -- 12
+13 [label="primary"]
+12 -- 13
+14 [label="literal"]
+13 -- 14
+15 [label="integerLiteral"]
+14 -- 15
+16 [label="3" shape=rectangle]
+15 -- 16
+17 [label=";" shape=rectangle]
+2 -- 17
+18 [label="blockStatement"]
+1 -- 18
+19 [label="statement"]
+18 -- 19
+20 [label="if" shape=rectangle]
+19 -- 20
+21 [label="parExpression"]
+19 -- 21
+22 [label="(" shape=rectangle]
+21 -- 22
+23 [label="expression"]
+21 -- 23
+24 [label="expression"]
+23 -- 24
+25 [label="primary"]
+24 -- 25
+26 [label="a" shape=rectangle]
+25 -- 26
+27 [label=">" shape=rectangle]
+23 -- 27
+28 [label="expression"]
+23 -- 28
+29 [label="primary"]
+28 -- 29
+30 [label="literal"]
+29 -- 30
+31 [label="integerLiteral"]
+30 -- 31
+32 [label="2" shape=rectangle]
+31 -- 32
+33 [label=")" shape=rectangle]
+21 -- 33
+34 [label="statement"]
+19 -- 34
+35 [label="expression"]
+34 -- 35
+36 [label="functionCall"]
+35 -- 36
+37 [label="println" shape=rectangle]
+36 -- 37
+38 [label="(" shape=rectangle]
+36 -- 38
+39 [label="expressionList"]
+36 -- 39
+40 [label="expression"]
+39 -- 40
+41 [label="primary"]
+40 -- 41
+42 [label="literal"]
+41 -- 42
+43 [label="\"a>2\"" shape=rectangle]
+42 -- 43
+44 [label=")" shape=rectangle]
+36 -- 44
+45 [label=";" shape=rectangle]
+34 -- 45
+46 [label="else" shape=rectangle]
+19 -- 46
+47 [label="statement"]
+19 -- 47
+48 [label="expression"]
+47 -- 48
+49 [label="functionCall"]
+48 -- 49
+50 [label="println" shape=rectangle]
+49 -- 50
+51 [label="(" shape=rectangle]
+49 -- 51
+52 [label="expressionList"]
+49 -- 52
+53 [label="expression"]
+52 -- 53
+54 [label="primary"]
+53 -- 54
+55 [label="literal"]
+54 -- 55
+56 [label="\"a<=2\"" shape=rectangle]
+55 -- 56
+57 [label=")" shape=rectangle]
+49 -- 57
+58 [label=";" shape=rectangle]
+47 -- 58
+59 [label="blockStatement"]
+1 -- 59
+60 [label="statement"]
+59 -- 60
+61 [label="if" shape=rectangle]
+60 -- 61
+62 [label="parExpression"]
+60 -- 62
+63 [label="(" shape=rectangle]
+62 -- 63
+64 [label="expression"]
+62 -- 64
+65 [label="expression"]
+64 -- 65
+66 [label="expression"]
+65 -- 66
+67 [label="primary"]
+66 -- 67
+68 [label="a" shape=rectangle]
+67 -- 68
+69 [label="-" shape=rectangle]
+65 -- 69
+70 [label="expression"]
+65 -- 70
+71 [label="primary"]
+70 -- 71
+72 [label="literal"]
+71 -- 72
+73 [label="integerLiteral"]
+72 -- 73
+74 [label="1" shape=rectangle]
+73 -- 74
+75 [label=">" shape=rectangle]
+64 -- 75
+76 [label="expression"]
+64 -- 76
+77 [label="primary"]
+76 -- 77
+78 [label="literal"]
+77 -- 78
+79 [label="integerLiteral"]
+78 -- 79
+80 [label="2" shape=rectangle]
+79 -- 80
+81 [label=")" shape=rectangle]
+62 -- 81
+82 [label="statement"]
+60 -- 82
+83 [label="block"]
+82 -- 83
+84 [label="{" shape=rectangle]
+83 -- 84
+85 [label="blockStatements"]
+83 -- 85
+86 [label="blockStatement"]
+85 -- 86
+87 [label="statement"]
+86 -- 87
+88 [label="expression"]
+87 -- 88
+89 [label="functionCall"]
+88 -- 89
+90 [label="println" shape=rectangle]
+89 -- 90
+91 [label="(" shape=rectangle]
+89 -- 91
+92 [label="expressionList"]
+89 -- 92
+93 [label="expression"]
+92 -- 93
+94 [label="primary"]
+93 -- 94
+95 [label="literal"]
+94 -- 95
+96 [label="\"a-1>2\"" shape=rectangle]
+95 -- 96
+97 [label=")" shape=rectangle]
+89 -- 97
+98 [label=";" shape=rectangle]
+87 -- 98
+99 [label="}" shape=rectangle]
+83 -- 99
+100 [label="else" shape=rectangle]
+60 -- 100
+101 [label="statement"]
+60 -- 101
+102 [label="block"]
+101 -- 102
+103 [label="{" shape=rectangle]
+102 -- 103
+104 [label="blockStatements"]
+102 -- 104
+105 [label="blockStatement"]
+104 -- 105
+106 [label="statement"]
+105 -- 106
+107 [label="expression"]
+106 -- 107
+108 [label="functionCall"]
+107 -- 108
+109 [label="println" shape=rectangle]
+108 -- 109
+110 [label="(" shape=rectangle]
+108 -- 110
+111 [label="expressionList"]
+108 -- 111
+112 [label="expression"]
+111 -- 112
+113 [label="primary"]
+112 -- 113
+114 [label="literal"]
+113 -- 114
+115 [label="\"a-1<=2\"" shape=rectangle]
+114 -- 115
+116 [label=")" shape=rectangle]
+108 -- 116
+117 [label=";" shape=rectangle]
+106 -- 117
+118 [label="}" shape=rectangle]
+102 -- 118
+119 [label="blockStatement"]
+1 -- 119
+120 [label="statement"]
+119 -- 120
+121 [label="expression"]
+120 -- 121
+122 [label="expression"]
+121 -- 122
+123 [label="primary"]
+122 -- 123
+124 [label="a" shape=rectangle]
+123 -- 124
+125 [label="=" shape=rectangle]
+121 -- 125
+126 [label="expression"]
+121 -- 126
+127 [label="primary"]
+126 -- 127
+128 [label="literal"]
+127 -- 128
+129 [label="integerLiteral"]
+128 -- 129
+130 [label="3" shape=rectangle]
+129 -- 130
+131 [label=";" shape=rectangle]
+120 -- 131
+132 [label="blockStatement"]
+1 -- 132
+133 [label="statement"]
+132 -- 133
+134 [label="if" shape=rectangle]
+133 -- 134
+135 [label="parExpression"]
+133 -- 135
+136 [label="(" shape=rectangle]
+135 -- 136
+137 [label="expression"]
+135 -- 137
+138 [label="expression"]
+137 -- 138
+139 [label="primary"]
+138 -- 139
+140 [label="a" shape=rectangle]
+139 -- 140
+141 [label=">" shape=rectangle]
+137 -- 141
+142 [label="expression"]
+137 -- 142
+143 [label="primary"]
+142 -- 143
+144 [label="literal"]
+143 -- 144
+145 [label="integerLiteral"]
+144 -- 145
+146 [label="2" shape=rectangle]
+145 -- 146
+147 [label=")" shape=rectangle]
+135 -- 147
+148 [label="statement"]
+133 -- 148
+149 [label="block"]
+148 -- 149
+150 [label="{" shape=rectangle]
+149 -- 150
+151 [label="blockStatements"]
+149 -- 151
+152 [label="blockStatement"]
+151 -- 152
+153 [label="statement"]
+152 -- 153
+154 [label="if" shape=rectangle]
+153 -- 154
+155 [label="parExpression"]
+153 -- 155
+156 [label="(" shape=rectangle]
+155 -- 156
+157 [label="expression"]
+155 -- 157
+158 [label="expression"]
+157 -- 158
+159 [label="expression"]
+158 -- 159
+160 [label="primary"]
+159 -- 160
+161 [label="literal"]
+160 -- 161
+162 [label="integerLiteral"]
+161 -- 162
+163 [label="1" shape=rectangle]
+162 -- 163
+164 [label="+" shape=rectangle]
+158 -- 164
+165 [label="expression"]
+158 -- 165
+166 [label="primary"]
+165 -- 166
+167 [label="literal"]
+166 -- 167
+168 [label="integerLiteral"]
+167 -- 168
+169 [label="1" shape=rectangle]
+168 -- 169
+170 [label="<" shape=rectangle]
+157 -- 170
+171 [label="expression"]
+157 -- 171
+172 [label="primary"]
+171 -- 172
+173 [label="literal"]
+172 -- 173
+174 [label="integerLiteral"]
+173 -- 174
+175 [label="1" shape=rectangle]
+174 -- 175
+176 [label=")" shape=rectangle]
+155 -- 176
+177 [label="statement"]
+153 -- 177
+178 [label="expression"]
+177 -- 178
+179 [label="functionCall"]
+178 -- 179
+180 [label="println" shape=rectangle]
+179 -- 180
+181 [label="(" shape=rectangle]
+179 -- 181
+182 [label="expressionList"]
+179 -- 182
+183 [label="expression"]
+182 -- 183
+184 [label="primary"]
+183 -- 184
+185 [label="literal"]
+184 -- 185
+186 [label="\"1+1<1\"" shape=rectangle]
+185 -- 186
+187 [label=")" shape=rectangle]
+179 -- 187
+188 [label=";" shape=rectangle]
+177 -- 188
+189 [label="else" shape=rectangle]
+153 -- 189
+190 [label="statement"]
+153 -- 190
+191 [label="expression"]
+190 -- 191
+192 [label="functionCall"]
+191 -- 192
+193 [label="println" shape=rectangle]
+192 -- 193
+194 [label="(" shape=rectangle]
+192 -- 194
+195 [label="expressionList"]
+192 -- 195
+196 [label="expression"]
+195 -- 196
+197 [label="primary"]
+196 -- 197
+198 [label="literal"]
+197 -- 198
+199 [label="\"1+1>=1\"" shape=rectangle]
+198 -- 199
+200 [label=")" shape=rectangle]
+192 -- 200
+201 [label=";" shape=rectangle]
+190 -- 201
+202 [label="}" shape=rectangle]
+149 -- 202
+203 [label="else" shape=rectangle]
+133 -- 203
+204 [label="statement"]
+133 -- 204
+205 [label="block"]
+204 -- 205
+206 [label="{" shape=rectangle]
+205 -- 206
+207 [label="blockStatements"]
+205 -- 207
+208 [label="blockStatement"]
+207 -- 208
+209 [label="statement"]
+208 -- 209
+210 [label="expression"]
+209 -- 210
+211 [label="functionCall"]
+210 -- 211
+212 [label="println" shape=rectangle]
+211 -- 212
+213 [label="(" shape=rectangle]
+211 -- 213
+214 [label="expressionList"]
+211 -- 214
+215 [label="expression"]
+214 -- 215
+216 [label="primary"]
+215 -- 216
+217 [label="literal"]
+216 -- 217
+218 [label="\"error\"" shape=rectangle]
+217 -- 218
+219 [label=")" shape=rectangle]
+211 -- 219
+220 [label=";" shape=rectangle]
+209 -- 220
+221 [label="}" shape=rectangle]
+205 -- 221
+222 [label="blockStatement"]
+1 -- 222
+223 [label="statement"]
+222 -- 223
+224 [label="if" shape=rectangle]
+223 -- 224
+225 [label="parExpression"]
+223 -- 225
+226 [label="(" shape=rectangle]
+225 -- 226
+227 [label="expression"]
+225 -- 227
+228 [label="expression"]
+227 -- 228
+229 [label="primary"]
+228 -- 229
+230 [label="literal"]
+229 -- 230
+231 [label="integerLiteral"]
+230 -- 231
+232 [label="2" shape=rectangle]
+231 -- 232
+233 [label=">" shape=rectangle]
+227 -- 233
+234 [label="expression"]
+227 -- 234
+235 [label="primary"]
+234 -- 235
+236 [label="literal"]
+235 -- 236
+237 [label="integerLiteral"]
+236 -- 237
+238 [label="1" shape=rectangle]
+237 -- 238
+239 [label=")" shape=rectangle]
+225 -- 239
+240 [label="statement"]
+223 -- 240
+241 [label="if" shape=rectangle]
+240 -- 241
+242 [label="parExpression"]
+240 -- 242
+243 [label="(" shape=rectangle]
+242 -- 243
+244 [label="expression"]
+242 -- 244
+245 [label="expression"]
+244 -- 245
+246 [label="primary"]
+245 -- 246
+247 [label="literal"]
+246 -- 247
+248 [label="integerLiteral"]
+247 -- 248
+249 [label="2" shape=rectangle]
+248 -- 249
+250 [label="<" shape=rectangle]
+244 -- 250
+251 [label="expression"]
+244 -- 251
+252 [label="primary"]
+251 -- 252
+253 [label="literal"]
+252 -- 253
+254 [label="integerLiteral"]
+253 -- 254
+255 [label="1" shape=rectangle]
+254 -- 255
+256 [label=")" shape=rectangle]
+242 -- 256
+257 [label="statement"]
+240 -- 257
+258 [label="expression"]
+257 -- 258
+259 [label="functionCall"]
+258 -- 259
+260 [label="println" shape=rectangle]
+259 -- 260
+261 [label="(" shape=rectangle]
+259 -- 261
+262 [label="expressionList"]
+259 -- 262
+263 [label="expression"]
+262 -- 263
+264 [label="primary"]
+263 -- 264
+265 [label="literal"]
+264 -- 265
+266 [label="\"hehe\"" shape=rectangle]
+265 -- 266
+267 [label=")" shape=rectangle]
+259 -- 267
+268 [label=";" shape=rectangle]
+257 -- 268
+269 [label="else" shape=rectangle]
+240 -- 269
+270 [label="statement"]
+240 -- 270
+271 [label="expression"]
+270 -- 271
+272 [label="functionCall"]
+271 -- 272
+273 [label="println" shape=rectangle]
+272 -- 273
+274 [label="(" shape=rectangle]
+272 -- 274
+275 [label="expressionList"]
+272 -- 275
+276 [label="expression"]
+275 -- 276
+277 [label="primary"]
+276 -- 277
+278 [label="literal"]
+277 -- 278
+279 [label="\"xixi\"" shape=rectangle]
+278 -- 279
+280 [label=")" shape=rectangle]
+272 -- 280
+281 [label=";" shape=rectangle]
+270 -- 281
+5 [label="primitiveType\n(Integer)"]
+4 [label="typeType\n(Integer)"]
+8 [label="variableDeclaratorId\n(Integer)"]
+14 [label="literal\n(Integer)"]
+13 [label="primary\n(Integer)"]
+12 [label="expression\n(Integer)"]
+11 [label="variableInitializer\n(Integer)"]
+25 [label="primary\n(Integer)"]
+24 [label="expression\n(Integer)"]
+30 [label="literal\n(Integer)"]
+29 [label="primary\n(Integer)"]
+28 [label="expression\n(Integer)"]
+23 [label="expression\n(Boolean)"]
+42 [label="literal\n(String)"]
+41 [label="primary\n(String)"]
+40 [label="expression\n(String)"]
+55 [label="literal\n(String)"]
+54 [label="primary\n(String)"]
+53 [label="expression\n(String)"]
+67 [label="primary\n(Integer)"]
+66 [label="expression\n(Integer)"]
+72 [label="literal\n(Integer)"]
+71 [label="primary\n(Integer)"]
+70 [label="expression\n(Integer)"]
+65 [label="expression\n(Integer)"]
+78 [label="literal\n(Integer)"]
+77 [label="primary\n(Integer)"]
+76 [label="expression\n(Integer)"]
+64 [label="expression\n(Boolean)"]
+95 [label="literal\n(String)"]
+94 [label="primary\n(String)"]
+93 [label="expression\n(String)"]
+114 [label="literal\n(String)"]
+113 [label="primary\n(String)"]
+112 [label="expression\n(String)"]
+123 [label="primary\n(Integer)"]
+122 [label="expression\n(Integer)"]
+128 [label="literal\n(Integer)"]
+127 [label="primary\n(Integer)"]
+126 [label="expression\n(Integer)"]
+121 [label="expression\n(Integer)"]
+139 [label="primary\n(Integer)"]
+138 [label="expression\n(Integer)"]
+144 [label="literal\n(Integer)"]
+143 [label="primary\n(Integer)"]
+142 [label="expression\n(Integer)"]
+137 [label="expression\n(Boolean)"]
+161 [label="literal\n(Integer)"]
+160 [label="primary\n(Integer)"]
+159 [label="expression\n(Integer)"]
+167 [label="literal\n(Integer)"]
+166 [label="primary\n(Integer)"]
+165 [label="expression\n(Integer)"]
+158 [label="expression\n(Integer)"]
+173 [label="literal\n(Integer)"]
+172 [label="primary\n(Integer)"]
+171 [label="expression\n(Integer)"]
+157 [label="expression\n(Boolean)"]
+185 [label="literal\n(String)"]
+184 [label="primary\n(String)"]
+183 [label="expression\n(String)"]
+198 [label="literal\n(String)"]
+197 [label="primary\n(String)"]
+196 [label="expression\n(String)"]
+217 [label="literal\n(String)"]
+216 [label="primary\n(String)"]
+215 [label="expression\n(String)"]
+230 [label="literal\n(Integer)"]
+229 [label="primary\n(Integer)"]
+228 [label="expression\n(Integer)"]
+236 [label="literal\n(Integer)"]
+235 [label="primary\n(Integer)"]
+234 [label="expression\n(Integer)"]
+227 [label="expression\n(Boolean)"]
+247 [label="literal\n(Integer)"]
+246 [label="primary\n(Integer)"]
+245 [label="expression\n(Integer)"]
+253 [label="literal\n(Integer)"]
+252 [label="primary\n(Integer)"]
+251 [label="expression\n(Integer)"]
+244 [label="expression\n(Boolean)"]
+265 [label="literal\n(String)"]
+264 [label="primary\n(String)"]
+263 [label="expression\n(String)"]
+278 [label="literal\n(String)"]
+277 [label="primary\n(String)"]
+276 [label="expression\n(String)"]
+}

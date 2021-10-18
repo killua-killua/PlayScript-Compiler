@@ -1,0 +1,186 @@
+graph at {
+node [shape=plaintext]
+0 [label="prog"]
+1 [label="blockStatements"]
+0 -- 1
+2 [label="blockStatement"]
+1 -- 2
+3 [label="variableDeclarators"]
+2 -- 3
+4 [label="typeType"]
+3 -- 4
+5 [label="primitiveType"]
+4 -- 5
+6 [label="int" shape=rectangle]
+5 -- 6
+7 [label="variableDeclarator"]
+3 -- 7
+8 [label="variableDeclaratorId"]
+7 -- 8
+9 [label="b" shape=rectangle]
+8 -- 9
+10 [label="=" shape=rectangle]
+7 -- 10
+11 [label="variableInitializer"]
+7 -- 11
+12 [label="expression"]
+11 -- 12
+13 [label="primary"]
+12 -- 13
+14 [label="literal"]
+13 -- 14
+15 [label="integerLiteral"]
+14 -- 15
+16 [label="10" shape=rectangle]
+15 -- 16
+17 [label=";" shape=rectangle]
+2 -- 17
+18 [label="blockStatement"]
+1 -- 18
+19 [label="functionDeclaration"]
+18 -- 19
+20 [label="typeTypeOrVoid"]
+19 -- 20
+21 [label="typeType"]
+20 -- 21
+22 [label="primitiveType"]
+21 -- 22
+23 [label="int" shape=rectangle]
+22 -- 23
+24 [label="myfunc" shape=rectangle]
+19 -- 24
+25 [label="formalParameters"]
+19 -- 25
+26 [label="(" shape=rectangle]
+25 -- 26
+27 [label="formalParameterList"]
+25 -- 27
+28 [label="formalParameter"]
+27 -- 28
+29 [label="typeType"]
+28 -- 29
+30 [label="primitiveType"]
+29 -- 30
+31 [label="int" shape=rectangle]
+30 -- 31
+32 [label="variableDeclaratorId"]
+28 -- 32
+33 [label="a" shape=rectangle]
+32 -- 33
+34 [label=")" shape=rectangle]
+25 -- 34
+35 [label="functionBody"]
+19 -- 35
+36 [label="block"]
+35 -- 36
+37 [label="{" shape=rectangle]
+36 -- 37
+38 [label="blockStatements"]
+36 -- 38
+39 [label="blockStatement"]
+38 -- 39
+40 [label="statement"]
+39 -- 40
+41 [label="return" shape=rectangle]
+40 -- 41
+42 [label="expression"]
+40 -- 42
+43 [label="expression"]
+42 -- 43
+44 [label="expression"]
+43 -- 44
+45 [label="primary"]
+44 -- 45
+46 [label="a" shape=rectangle]
+45 -- 46
+47 [label="+" shape=rectangle]
+43 -- 47
+48 [label="expression"]
+43 -- 48
+49 [label="primary"]
+48 -- 49
+50 [label="b" shape=rectangle]
+49 -- 50
+51 [label="+" shape=rectangle]
+42 -- 51
+52 [label="expression"]
+42 -- 52
+53 [label="primary"]
+52 -- 53
+54 [label="literal"]
+53 -- 54
+55 [label="integerLiteral"]
+54 -- 55
+56 [label="3" shape=rectangle]
+55 -- 56
+57 [label=";" shape=rectangle]
+40 -- 57
+58 [label="}" shape=rectangle]
+36 -- 58
+59 [label="blockStatement"]
+1 -- 59
+60 [label="statement"]
+59 -- 60
+61 [label="expression"]
+60 -- 61
+62 [label="functionCall"]
+61 -- 62
+63 [label="println" shape=rectangle]
+62 -- 63
+64 [label="(" shape=rectangle]
+62 -- 64
+65 [label="expressionList"]
+62 -- 65
+66 [label="expression"]
+65 -- 66
+67 [label="functionCall"]
+66 -- 67
+68 [label="myfunc" shape=rectangle]
+67 -- 68
+69 [label="(" shape=rectangle]
+67 -- 69
+70 [label="expressionList"]
+67 -- 70
+71 [label="expression"]
+70 -- 71
+72 [label="primary"]
+71 -- 72
+73 [label="literal"]
+72 -- 73
+74 [label="integerLiteral"]
+73 -- 74
+75 [label="2" shape=rectangle]
+74 -- 75
+76 [label=")" shape=rectangle]
+67 -- 76
+77 [label=")" shape=rectangle]
+62 -- 77
+78 [label=";" shape=rectangle]
+60 -- 78
+5 [label="primitiveType\n(Integer)"]
+4 [label="typeType\n(Integer)"]
+22 [label="primitiveType\n(Integer)"]
+21 [label="typeType\n(Integer)"]
+20 [label="typeTypeOrVoid\n(Integer)"]
+30 [label="primitiveType\n(Integer)"]
+29 [label="typeType\n(Integer)"]
+8 [label="variableDeclaratorId\n(Integer)"]
+14 [label="literal\n(Integer)"]
+13 [label="primary\n(Integer)"]
+12 [label="expression\n(Integer)"]
+11 [label="variableInitializer\n(Integer)"]
+45 [label="primary\n(Integer)"]
+44 [label="expression\n(Integer)"]
+49 [label="primary\n(Integer)"]
+48 [label="expression\n(Integer)"]
+43 [label="expression\n(Integer)"]
+54 [label="literal\n(Integer)"]
+53 [label="primary\n(Integer)"]
+52 [label="expression\n(Integer)"]
+42 [label="expression\n(Integer)"]
+73 [label="literal\n(Integer)"]
+72 [label="primary\n(Integer)"]
+71 [label="expression\n(Integer)"]
+67 [label="functionCall\n(Integer)"]
+66 [label="expression\n(Integer)"]
+}

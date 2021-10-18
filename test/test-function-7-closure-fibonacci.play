@@ -1,0 +1,28 @@
+/**
+ * 测试内容：闭包
+ * 用闭包实现斐波那契数列。斐波那契数列是这样的数字：0,1,1,2,3,5,8,13...  每个数字是前面两个数字的和
+ */
+
+void fun(){
+    int a = 0;
+    int b = 1;
+    int fibonacci(){
+        int c = a;
+        a = b;
+        b = a+c;
+        return c;
+    }
+    return fibonacci;
+}
+
+function int() fib = fun();
+
+//打印斐波那契数列，在闭包里记住了相邻两次计算的结果
+for (int i = 0; i < 80; i++){
+    println(fib());
+}
+
+/*
+ * 预期输出：
+0,1,1,2,3,5,8,13...
+ */

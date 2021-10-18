@@ -1,0 +1,24 @@
+/*
+ * 测试内容：函数闭包（Closure）
+ * 即：函数内定义函数并返回的情况下，内部函数可以在自动建立闭包变量，保证在退出了定义它的函数的作用域后，也能正常运行。
+ */
+
+ 
+function int(int) make_func(int n)
+{
+    int inner(int x)
+    {
+        int res = 1;
+        for (int i=0; i<n; i++) {
+            res *= x;
+        }
+        return res;
+    }
+    return inner;
+}
+
+function int(int) square = make_func(2);
+function int(int) cubic  = make_func(3);
+
+println(square(2));
+println(cubic(2));

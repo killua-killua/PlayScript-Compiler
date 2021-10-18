@@ -1,0 +1,43 @@
+// 测试内容：if-else 语句
+
+
+int a = 3;
+
+// 单语句 statement
+if (a > 2)
+    println("a>2");
+else
+    println("a<=2");
+
+// block statement
+if (a-1 > 2) {
+    println("a-1>2");
+} else {
+    println("a-1<=2");
+}
+
+a = 3;
+
+// 嵌套 if-else
+if (a > 2) {
+    if (1+1<1)
+        println("1+1<1");
+    else
+        println("1+1>=1");
+} else {
+    println("error");
+}
+
+// 悬挂else
+if (2>1)
+if (2<1) println("hehe");
+else println("xixi");
+
+
+
+/* 预期输出：
+a>2
+a-1<=2
+1+1>=1
+xixi
+ */

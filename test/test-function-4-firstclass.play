@@ -1,0 +1,30 @@
+/*
+ * 测试内容：函数作为一等公民。
+ * 也就是：
+ * 支持函数类型（FunctionType）
+ * 可以定义函数类型的变量
+ * 可以赋给别的变量
+ * 可以运算（调用）
+ * 可以作为函数入参和返回值
+ */
+
+
+int foo(int a){
+    println("in foo, a = " + a);
+    return a;
+}
+
+int bar (function int(int) fun){
+    int b = fun(6);
+    println("in bar, b = " + b);
+    return b;
+}
+
+function int(int) a = foo;  //函数作为变量初始化值
+a(4);
+
+function int(int) b;        
+b = foo;                    //函数用于赋值语句
+b(5);
+
+bar(foo);                   //函数做为参数
